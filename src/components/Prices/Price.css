@@ -76,7 +76,7 @@
   font-size: 18px;
   color: #55c57a;
 }
-.positionBuchenGroup {
+.positionButton {
   height: 100%;
   width: 100%;
   flex-grow: 1;
@@ -84,11 +84,11 @@
   justify-content: center;
   align-items: flex-end;
 }
-.buchenContainer {
+.submitButtonContainer {
   padding-bottom: 29px;
   padding-top: 9px;
 }
-.buchen {
+.submitButton {
   width: 337.5px;
   height: 38px;
   border-radius: 10px;
@@ -98,11 +98,20 @@
   justify-content: center;
   align-items: center;
 }
-.textBuchen {
+.buttonText {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   color: #ffffff;
   cursor: pointer;
+}
+
+.displayText {
+  position: relative;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #222222;
 }
