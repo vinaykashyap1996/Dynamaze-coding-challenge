@@ -2,6 +2,18 @@
     <Header />
     <Hero :image-source="imageUrl" />
     <Contents :time-slots="timeSlots" />
+    <div class="positionButton">
+        <div class="submitButtonContainer">
+            <div
+                class="submitButton"
+                @click="submitBooking"
+            >
+                <div class="buttonText">
+                    Jetzt buchen
+                </div>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -28,7 +40,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 45px;
 }
 
 body {

@@ -36,7 +36,7 @@
   width: 58.6px;
   left: 1.85%;
   right: -10.37%;
-  top: 86.42%;
+  top: 77.42%;
   bottom: 13.58%;
   transform: rotate(-25.5deg) translate(0px, -200%);
 }
@@ -77,6 +77,7 @@
   color: #55c57a;
 }
 .positionButton {
+  margin-top: 80px;
   height: 100%;
   width: 100%;
   flex-grow: 1;
@@ -108,10 +109,13 @@
 }
 
 .displayText {
+  margin-top: 30px;
+  margin-bottom: 16px;
+  line-height: 24px;
   position: relative;
   font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   color: #222222;
 }

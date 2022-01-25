@@ -6,6 +6,32 @@
         <div class="counterContainer">
             <div
                 class="decreaseIncreaseButtonContainer leftButton"
+                @click="decreaseCounter"
+            >
+                <div class="decreaseIncreaseButton">
+                    <svg
+                        class="increaseDescreaseSvg"
+                        width="14"
+                        height="2"
+                        viewBox="0 0 14 2"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <line
+                            y1="1"
+                            x2="14"
+                            y2="1"
+                            stroke="black"
+                            stroke-width="2"
+                        />
+                    </svg>
+                </div>
+            </div>
+            <div class="numberOfTickets">
+                {{ counter }} {{ counter > 1 ? "Tickets" : "Ticket" }}
+            </div>
+            <div
+                class="decreaseIncreaseButtonContainer rightButton"
                 @click="increaseCounter"
             >
                 <div class="decreaseIncreaseButton">
@@ -34,47 +60,9 @@
                     </svg>
                 </div>
             </div>
-            <div class="numberOfTickets">
-                {{ counter }} {{ counter > 1 ? "Tickets" : "Ticket" }}
-            </div>
-            <div
-                class="decreaseIncreaseButtonContainer rightButton"
-                @click="decreaseCounter"
-            >
-                <div class="decreaseIncreaseButton">
-                    <svg
-                        class="increaseDescreaseSvg"
-                        width="14"
-                        height="2"
-                        viewBox="0 0 14 2"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <line
-                            y1="1"
-                            x2="14"
-                            y2="1"
-                            stroke="black"
-                            stroke-width="2"
-                        />
-                    </svg>
-                </div>
-            </div>
         </div>
         <div class="totalPrice">
-            {{ priceTotal }} euros
-        </div>
-        <div class="positionButton">
-            <div class="submitButtonContainer">
-                <div
-                    class="submitButton"
-                    @click="submitBooking"
-                >
-                    <div class="buttonText">
-                        Jetzt buchen
-                    </div>
-                </div>
-            </div>
+            {{ toFixed(priceTotal) }} 
         </div>
     </div>
 </template>
@@ -107,7 +95,7 @@ export default {
     },
     computed: {
         ticketsLeft: function () {
-            return this.ticketAmount - this.counter;
+            return Math.max(0,this.ticketAmount - this.counter);
         },
         priceTotal: function () {
             return this.counter * this.ticketPrice;
@@ -122,6 +110,12 @@ export default {
             } else {
                 return 0;
             }
+        },
+        toFixed: function (amount) {
+            return amount.toLocaleString("de-DE", {
+                style: "currency",
+                currency: "EUR",
+            });
         },
         increaseCounter: function () {
             if (this.ticketsLeft > 0) this.counter = this.counter + 1;
