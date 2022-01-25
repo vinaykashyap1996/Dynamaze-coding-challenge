@@ -1,0 +1,23 @@
+.header-container {
+  position: absolute;
+  width: 375.25px;
+  height: 45px;
+  left: 0px;
+  top: 0px;
+}
+.header-logo {
+  position: absolute;
+  width: 166px;
+  height: 34px;
+  left: calc(50% - 166px / 2 + 0.38px);
+  top: calc(50% - 34px / 2 - 0.5px);
+}
+.header-line {
+  position: absolute;
+  height: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: -10px;
+
+  border: 1px solid #ff9232;
+}

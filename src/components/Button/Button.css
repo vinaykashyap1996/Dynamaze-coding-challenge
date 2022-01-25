@@ -1,0 +1,75 @@
+.bookingOption {
+  width: fit-content;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+.buttonContainer {
+  height: 60px;
+  width: 69.58000183105469px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+.button {
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  box-sizing: border-box;
+  position: absolute;
+}
+.buttonContainer::before {
+  content: "";
+  width: 19px;
+  height: 3px;
+  left: 42.58px;
+  top: 0px;
+  position: absolute;
+  background-color: white;
+  transform: skew(-45deg);
+  z-index: 1;
+}
+/* white skewed diagonal line on the bottom left corner */
+.buttonContainer::after {
+  content: "";
+  width: 19px;
+  height: 3px;
+  left: 8px;
+  top: 57px;
+  position: absolute;
+  background-color: white;
+  transform: skew(-45deg);
+}
+
+.inActive {
+  background: rgba(255, 255, 255, 0.7);
+  border: 3px solid #55c57a;
+  z-index: 0;
+}
+.isActive {
+  background: linear-gradient(225.08deg, #7ed56f 15.51%, #55c57a 100%);
+  z-index: 2;
+}
+.whiteColor {
+  color: #ffffff !important;
+}
+.whiteBorder {
+  border: 1px solid #ffffff !important;
+}
+.dataContainer {
+  position: absolute;
+  color: #55c57a;
+  font-weight: 500;
+  font-size: 16px;
+  width: 100%;
+  line-height: 26px;
+  z-index: 3;
+}
+
+.dividerline {
+  border: 1px solid #55c57a;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 4px;
+}
