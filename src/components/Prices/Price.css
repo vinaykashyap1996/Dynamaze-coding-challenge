@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
 }
-/* properties for showing how many tickets are still available */
 .ticketsNumber {
   display: flex;
   justify-content: center;
@@ -14,7 +13,6 @@
   font-size: 16px;
   color: #222222;
 }
-/* container that includes "+", "N Tickets", "-" elements */
 .counterContainer {
   display: flex;
   align-items: center;
@@ -22,7 +20,6 @@
   padding-right: 45px;
   justify-content: center;
 }
-/* container for "+" and "-" buttons */
 .decreaseIncreaseButtonContainer {
   height: 40.5px;
   width: 54px;
@@ -31,7 +28,6 @@
   overflow: hidden;
   cursor: pointer;
 }
-/* diagonal white line from left bottom corner to the top righ on "+", "-" buttons */
 .decreaseIncreaseButtonContainer::before {
   content: "";
   position: absolute;
@@ -44,11 +40,9 @@
   bottom: 13.58%;
   transform: rotate(-25.5deg) translate(0px, -200%);
 }
-/* positioning "-" to the left side, avoids jumping behavior if the size of "number of Tickets" changes */
 .decreaseIncreaseButtonContainer.leftButton {
   margin-right: auto;
 }
-/* reponsible for styling "N Tickets" between "+", "-" buttons */
 .numberOfTickets {
   font-family: Montserrat;
   font-style: normal;
@@ -56,11 +50,9 @@
   font-size: 20px;
   color: #222222;
 }
-/* positioning "+" to the right side, avoids jumping behavior if the size of "number of Tickets" changes */
 .decreaseIncreaseButtonContainer.rightButton {
   margin-left: auto;
 }
-/* styling of the "+", "-" buttons */
 .decreaseIncreaseButton {
   height: 100%;
   width: 100%;
@@ -72,11 +64,9 @@
   justify-content: center;
   align-items: center;
 }
-/* positioning of "+", "-" SVGs */
 .increaseDescreaseSvg {
   position: absolute;
 }
-/* styling of total price to be paid by user */
 .totalPrice {
   padding-top: 17.5px;
   display: flex;
@@ -86,7 +76,6 @@
   font-size: 18px;
   color: #55c57a;
 }
-/* positioning of "Jetz buchen" elements */
 .positionBuchenGroup {
   height: 100%;
   width: 100%;
@@ -95,12 +84,10 @@
   justify-content: center;
   align-items: flex-end;
 }
-/* padding for "Jetzt buchen" */
 .buchenContainer {
   padding-bottom: 29px;
   padding-top: 9px;
 }
-/* styling for "Jetzt buchen" button*/
 .buchen {
   width: 337.5px;
   height: 38px;
@@ -111,7 +98,6 @@
   justify-content: center;
   align-items: center;
 }
-/* styling for "Jetzt buchen" button's text*/
 .textBuchen {
   font-family: Montserrat;
   font-style: normal;

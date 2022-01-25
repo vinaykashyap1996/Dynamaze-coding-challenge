@@ -3,17 +3,6 @@
     <Header />
     <DisplayImage :image-source="imageUrl" />
     <Contents :time-slots="timeSlots" />
-    
-<!--
-    <p class="totalcost">
-        {{ displayAmount(amount,counter) }} euros
-    </p>
-    <button
-        class="submitbutton BookingButton"
-        @click="greet"
-    >
-        Jetzt Buchen
-    </button> -->
 </template>
 
 <script>
@@ -31,13 +20,6 @@ export default {
     data: function() {
         return {
             imageUrl:"https://firebasestorage.googleapis.com/v0/b/dynamaze---pwa-1550221436823.appspot.com/o/public%2Fimg%2Fdeals%2Ffunfussball1.png?alt=media&token=448599c6-ffb7-43f4-afc9-dfb82ce426f0",
-            selectedAmount: 1,
-            date:null,
-            amount:0,
-            activeId:0,
-            isAddClass: false,
-            sum:0,
-            selected:undefined,
             timeSlots: [
                 {
                     id: "1",

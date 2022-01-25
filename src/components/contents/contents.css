@@ -1,0 +1,19 @@
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+.Booking {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 20px;
+}
+.timeSlots {
+  display: flex;
+  justify-content: space-between;
+  margin: 1vw 5vw 1vw 5vw;
+}
