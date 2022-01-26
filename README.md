@@ -2,7 +2,7 @@
 
 ```
 Check for live demo of the task in the below link . Made for Iphone 6/7/8
-https://epic-raman-f576a4.netlify.app/
+[Link to Task] (https://epic-raman-f576a4.netlify.app/)
 ```
 yarn install
 ```
